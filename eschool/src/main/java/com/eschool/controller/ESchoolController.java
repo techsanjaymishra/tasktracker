@@ -3,13 +3,14 @@ package com.eschool.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.eschool.domain.Response;
 
+import io.swagger.annotations.Api;
+
+@Api(value="e-school test api")
 @RestController
-@RequestMapping(value="/eschool")
 public class ESchoolController {
 	
 	@GetMapping(value="/test")
